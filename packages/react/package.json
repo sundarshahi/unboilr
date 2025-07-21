@@ -1,0 +1,66 @@
+{
+  "name": "@unboilr/react",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A boilerplate less optimized react solutions.",
+  "main": "./context-builder.umd.js",
+  "module": "./context-builder.es.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/context-builder.es.js",
+      "require": "./dist/context-builder.umd.js"
+    }
+  },
+  "files": [
+    "*.js",
+    "*.d.ts"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:dev": "vite build --mode development",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "react",
+    "unboilr",
+    "boilerplate",
+    "context",
+    "frontend",
+    "typescript",
+    "hooks"
+  ],
+  "author": {
+    "name": "Sundar Shahi Thakuri",
+    "url": "https://github.com/sundarshahi",
+    "email": "shahithakurisundar@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:sundarshahi/unboilr.git"
+  },
+  "bugs": {
+    "url": "https://github.com:sundarshahi/unboilr/issues"
+  },
+  "homepage": "https://github.com:sundarshahi/unboilr/tree/main/packages/react",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15",
+    "@vitejs/plugin-react-swc": "^3.11.0",
+    "vite": "^7.0.5",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}
