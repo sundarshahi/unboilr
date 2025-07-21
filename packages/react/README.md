@@ -26,7 +26,7 @@ React Context is powerful, but often:
 
     😕 Lacks clear type safety
 
-This library solves all that using a single factory function: ontextBuilder.
+This library solves all that using a single factory function: ContextBuilder.
 
 ## ✅ Features
 
