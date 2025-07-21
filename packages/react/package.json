@@ -1,7 +1,7 @@
 {
   "name": "@unboilr/react",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "module",
   "description": "A boilerplate less optimized react solutions.",
   "main": "./context-builder.umd.js",
@@ -14,8 +14,7 @@
     }
   },
   "files": [
-    "*.js",
-    "*.d.ts"
+    "dist"
   ],
   "scripts": {
     "dev": "vite",
@@ -46,7 +45,7 @@
   "bugs": {
     "url": "https://github.com:sundarshahi/unboilr/issues"
   },
-  "homepage": "https://github.com:sundarshahi/unboilr/tree/main/packages/react",
+  "homepage": "https://github.com/sundarshahi/unboilr/tree/main/packages/react",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
