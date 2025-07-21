@@ -15,7 +15,7 @@ type InferReturn<T> = T extends (...args: any[]) => infer R ? R : never;
  * @param useHook - custom hook returning the context value
  * @param options - optional config (e.g. name for debugging and errors)
  */
-export function contextBuilder<Hook extends (...args: any[]) => any>(
+export function ContextBuilder<Hook extends (...args: any[]) => any>(
   useHook: Hook,
   options?: ContextBuilderOptions
 ) {
