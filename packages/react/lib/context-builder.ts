@@ -20,7 +20,7 @@ export function ContextBuilder<Hook extends (...args: any[]) => any>(
   options?: ContextBuilderOptions
 ) {
   const name = options?.name ?? "Context";
-  const Context = createContext<InferReturn<Hook> | null>(null);
+  const Context = createContext<InferReturn<Hook> | null>(null) as React.Context<InferReturn<Hook> | null>;
   Context.displayName = `${name}Context`;
 
   type ProviderProps = InferProps<Hook> & { children: ReactNode };
