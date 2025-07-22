@@ -82,7 +82,7 @@ export const ThemeSwitcher = () => {
 ### 🔐 Auth Context Example
 ```tsx
 // auth-context.tsx
-import { contextBuilder } from '@unboilr/react';
+import { ContextBuilder } from '@unboilr/react';
 import { useState } from 'react';
 
 const useAuthContext = () => {
@@ -92,7 +92,7 @@ const useAuthContext = () => {
   return { user, login, logout, isAuthenticated: !!user };
 };
 
-export const [AuthProvider, useAuth] = contextBuilder(useAuthContext);
+export const [AuthProvider, useAuth] = ContextBuilder(useAuthContext);
 
 ```
 ### Usage in App
